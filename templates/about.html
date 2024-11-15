@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoztHartz</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    
+    <div class="header">
+        <div class="container">
+            
+            <a class="title" href="{{ url_for('home') }}">
+                <h2 class="tp1">Lozt</h2>
+                <h2 class="tp2">Hartz</h2>
+            </a>
+            
+            
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    {% if username %}
+                        <li><a href="#">{{ username }}</a></li>
+                        <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                    {% else %}
+                        <li><a href="{{ url_for('login') }}">Login</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    
+    <main>
+        <div class="container">
+            <h1 class="container">About</h1>
+        </div>
+    </main>
+
+    
+    <div class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://tiktok.com" target="_blank">TikTok</a>
+                <a href="https://discord.com" target="_blank">Discord</a>
+            </div>
+            <p>Made by ©Kub228 | 2024</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,207 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1d1d1d;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+.container {
+    color: #ffffff;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.tp1{
+    color: #93D3FA;
+}
+
+.tp2{
+    color: #D893FA;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: rgb(170, 170, 170);
+}
+
+/* Body styling */
+main {
+    flex-grow: 1;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center; /* Centers content in the main section */
+}
+
+.body-content {
+    text-align: center;
+    color: #666;
+    font-size: 1.2rem;
+}
+
+/* Login & Signup Form styling */
+.form-container {
+    background-color: #222;
+    padding: 2rem;
+    max-width: 400px;
+    width: 90%;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 1rem;
+    color: #e8b9ff;
+    font-style: italic;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #666;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.form-container p {
+    margin-top: 1rem;
+    color: #ccc;
+}
+
+.form-container a {
+    color: #93D3FA;
+    text-decoration: underline;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    align-items: center;    /* Centers items horizontally within the column */
+    gap: 0.5rem;            /* Adds spacing between items */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Centers social links horizontally */
+    gap: 3rem;               /* Adds space between each link */
+    margin-bottom: 0.5rem;   /* Adds spacing below links */
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: rgb(170, 170, 170);
+}
+
+footer p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* User list styling */
+
+.user-list-box {
+    color: white;
+    background-color: #333;
+    padding: 35px;
+    border-radius: 25px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .social-links {
+        margin-top: 0.5rem;
+    }
+}
